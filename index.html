@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Windows</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div class="screen" id="screen"></div>
+    <div class="buttons">
+        <button class="operator" onclick="botonActivo(true)">A</button>
+        <button class="operator" onclick="evento('x^x')">x^x</button>
+        <button class="operator" onclick="evento('C')">C</button>
+        <button class="operator" onclick="evento('Eliminar')">⌫</button> 
+        <button onclick="calcular('raiz')">raiz</button>
+        <button onclick="calcular('x^2')">x^2</button>
+        <button onclick="calcular('F')">F</button>     
+        <button class="operator" onclick="Operacion('%')">%</button>
+        <button onclick="getDisplay('7')">7</button>
+        <button onclick="getDisplay('8')">8</button>
+        <button onclick="getDisplay('9')">9</button> 
+        <button class="operator"onclick="Operacion('/')">/</button>
+        <button onclick="getDisplay('4')">4</button>
+        <button onclick="getDisplay('5')">5</button>
+        <button onclick="getDisplay('6')">6</button>
+        <button class="operator" onclick="Operacion('*')">*</button>
+        <button id="btn1" onclick="getDisplay('1')">1</button>
+        <button id="btn2" onclick="getDisplay('2')">2</button>
+        <button id="btn3" onclick="getDisplay('3')">3</button>
+        <button class="operator" onclick="evento('-/+')">-/+</button>
+        <button class="double" id="btn0" onclick="getDisplay('0')">0</button>
+        <button onclick="getDisplay('.')">.</button>
+        <button class="resul"onclick="evento('=')">=</button>
+        <script src="./libControles.js"></script>
+    </div>
+</div>
+</body>
+</html>
